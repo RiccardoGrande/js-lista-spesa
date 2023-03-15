@@ -21,9 +21,11 @@ while ( i < shopList.length ) {
 
     console.log(listElement);
 
+    
+
     i++
     
-    document.createElement(listElement)
+    listElement = document.getElementById('shop_list');
     
 }
 
