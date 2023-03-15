@@ -12,21 +12,22 @@ const shopList = [
 
 //creo una variabile while
 
-let listElement = 0;
+let listElement = document.getElementById('shop_list');
 let i = 0;
 
 while ( i < shopList.length ) {
     
-    let listElement = shopList[i];
+    let item = shopList[i];
+    console.log(item);
 
-    console.log(listElement);
-
+    let li = document.createElement('li');
+    li.appendChild(document.createTextNode(item));
+    listElement.appendChild(li);
+    // inserisco il valore di item all'interno di li
+    // inserisco l'elemento li dentro al mio listElement
     
 
-    i++
-    
-    listElement = document.getElementById('shop_list');
-    
+    i++;
 }
 
    
